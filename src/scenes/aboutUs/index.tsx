@@ -4,14 +4,12 @@ import About1 from "@/assets/About1.png";
 import About2 from "@/assets/About2.png";
 import About3 from "@/assets/About3.png";
 import About4 from "@/assets/About4.png";
-import useMediaQuery from "@/hooks/useMediaQuery";
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
 
 const AboutUs = ({setSelectedPage}: Props) => {
-    const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-    const isBelowMediumScreens = useMediaQuery(" (max-width:480px)");
+
   return (
     
     <section
