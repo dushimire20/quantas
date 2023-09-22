@@ -17,13 +17,13 @@ type Props = {
     const flexBetween = "flex items-center justify-between";
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-    const navbarBackground = isTopOfPage ? "" : " drop-shadow";
+    const navbarBackground = isTopOfPage ? "bg-primary-100" : " drop-shadow bg-primary-100";
     
   
     return (
       <nav>
         <div
-          className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-[47px]`}
+          className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-[20px]`}
         >
           <div className={`${flexBetween} mx-auto w-5/6`}>
             <div className={`${flexBetween} w-full gap-16`}>
