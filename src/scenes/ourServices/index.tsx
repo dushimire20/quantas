@@ -124,7 +124,7 @@ const OurServices = ({setSelectedPage}: Props) => {
         {isBelowMediumScreens && (
             <div className="py-6 bg-gradient-to-b from-gray-200 to-secondary-100 w-5/6 mx-auto container justify-between gap-5 h-full text-center  ">
 
-                <p className=" mt-4 font-poppins font-semibold text-2xl">Maintenance Department</p>
+                <p className=" mx-2 mt-4 font-poppins font-semibold text-xl">Maintenance Department</p>
                 
                 <div className=" h-full w-full justify-center ">
                     <div className=" ">

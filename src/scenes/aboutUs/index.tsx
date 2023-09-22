@@ -4,11 +4,14 @@ import About1 from "@/assets/About1.png";
 import About2 from "@/assets/About2.png";
 import About3 from "@/assets/About3.png";
 import About4 from "@/assets/About4.png";
+import useMediaQuery from "@/hooks/useMediaQuery";
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
 
 const AboutUs = ({setSelectedPage}: Props) => {
+    const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+    const isBelowMediumScreens = useMediaQuery(" (max-width:480px)");
   return (
     
     <section
@@ -26,9 +29,9 @@ const AboutUs = ({setSelectedPage}: Props) => {
                 <div className=" xl:w-2/4 w-full h-full ">
                     
                 
-                    <p className="font-poppins font-semibold text-4xl mt-32 ">Expertise</p>
+                    <p className="font-poppins font-semibold text-4xl mt-32 text-center xs:text-justify ">Expertise</p>
                     <p
-                    className="mx-auto xs:text-justify text-left  font-poppins font-normal text-2xl leading-9 mt-5 "
+                    className="mx-auto  xs:text-left  font-poppins font-normal text-2xl leading-9 mt-5 text-center "
                     >Our teams consist of experts with extensive knowledge in both IT and maintenance services.
                     </p>
                     
@@ -45,9 +48,9 @@ const AboutUs = ({setSelectedPage}: Props) => {
             <div className="mt-20 mx-auto w-5/6 container xs:flex justify-between gap-32 xs:gap-8 h-full  ">
                 <div className=" xl:w-2/4 w-full h-full">
                  
-                <p className="font-poppins font-semibold text-4xl mt-32 ">Reliability</p>
+                <p className="font-poppins font-semibold text-4xl mt-32 xs:text-justify text-center ">Reliability</p>
                 <p
-                className="mx-auto xs:text-justify text-left  font-poppins font-normal text-2xl leading-9 mt-5 "
+                className="mx-auto  font-poppins font-normal text-2xl leading-9 mt-5 xs:text-justify text-center "
                 >Count on us to deliver on our promises, providing reliable products and services you can trust.
                 </p> 
 
@@ -76,9 +79,9 @@ const AboutUs = ({setSelectedPage}: Props) => {
                 </div>
                 <div className=" xl:w-2/4 w-full h-full ">
                     
-                    <p className="font-poppins font-semibold text-4xl mt-32 ">Efficiency</p>
+                    <p className="font-poppins font-semibold text-4xl mt-32 xs:text-justify text-center ">Efficiency</p>
                  <p
-                className="mx-auto xs:text-justify text-left  font-poppins font-normal text-2xl leading-9 mt-5 "
+                className="mx-auto xs:text-justify   font-poppins font-normal text-2xl leading-9 mt-5 text-center "
                 >In a rapidly evolving world, we understand the importance of timely service delivery without 
                 compromising quality.
                 </p> 
@@ -100,9 +103,9 @@ const AboutUs = ({setSelectedPage}: Props) => {
                 </div>
                 <div className=" xl:w-2/4 w-full h-full ">
                     
-                    <p className="font-poppins font-semibold text-4xl mt-32 ">Customer-Centric</p>
+                    <p className="font-poppins font-semibold text-4xl mt-32 xs:text-justify text-center ">Customer-Centric</p>
                  <p
-                className="mx-auto xs:text-justify text-left  font-poppins font-normal text-2xl leading-9 mt-5 "
+                className="mx-auto xs:text-justify text-center  font-poppins font-normal text-2xl leading-9 mt-5 "
                 >We tailor our solutions to match your unique needs, ensuring your 
                 satisfaction remains at the core of our services.
                 </p> 

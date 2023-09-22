@@ -32,7 +32,7 @@ const Footer = (props: Props) => {
             <img alt="footer-image" src={Footer_Image} className="mt-8" />
           </div>
 
-          <div className="xs:w-2/6 w-full justify-center mx-auto">
+          <div className="xs:w-2/6 w-full justify-center mx-auto flex-col">
           <p className=" font-poppins font-semibold text-2xl text-secondary-100">Important links</p>
           <div className="mt-16 ">
             <div className=" flex gap-2 mt-">
@@ -55,14 +55,18 @@ const Footer = (props: Props) => {
             </div>  
 
 
-          </div>        
+          </div> 
+          
+           
 
             
 
 
           </div>
+
           <a
           href="#home"
+
           >
             <motion.div
             animate={{
@@ -75,13 +79,14 @@ const Footer = (props: Props) => {
             }}
             >
             
-            <img src={Footer_button} className=" xs:mt-80  " />
+            <img src={Footer_button} className=" xs:mt-60  " />
             
 
             </motion.div>
           
 
           </a>
+                
 
           
 
