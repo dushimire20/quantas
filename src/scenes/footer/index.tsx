@@ -6,12 +6,7 @@ import Footer_Image from "@/assets/Footer_Image.png";
 import Footer_Menu_image from "@/assets/Footer_menu_button.png";
 import Footer_button from "@/assets/Footer_button.png";
 
-
-
-
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <section 
     className="mt-36 py-10 xs:pb-0  items-center justify-center  xs:h-fit bg-primary-300"
